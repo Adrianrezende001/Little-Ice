@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- Mesmo conteúdo do seu head anterior -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f4f6;
+    }
+
+    #login-container {
+      max-width: 300px;
+      margin: 100px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    #login-container h2 {
+      color: #0f070d;
+      text-align: center;
+    }
+
+    #login-form, #register-form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    label {
+      color: #0f070d;
+    }
+
+    input {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    #login-button, #register-button {
+      background-color: #c26e98;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    #login-button:hover, #register-button:hover {
+      background-color: #36032f;
+    }
+
+    #register-container {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="login-container">
+    <h2>Login</h2>
+    <form id="login-form">
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" required>
+      <label for="password">Senha:</label>
+      <input type="password" id="senha" required>
+      <button type="button" id="login-button" onclick="realizarLogin()">Entrar</button>
+    </form>
+
+    <div id="register-container">
+      <h2>Criar Conta</h2>
+      <form id="register-form">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" required>
+        <label for="register-email">E-mail:</label>
+        <input type="email" id="register-email" required>
+        <label for="register-password">Senha:</label>
+        <input type="password" id="register-password" required>
+        <button type="button" id="register-button" onclick="realizarRegistro()">Criar Conta</button>
+      </form>
+    </div>
+
+    <p>Não tem uma conta? <a href="#" onclick="mostrarRegistro()">Criar</a></p>
+  </div>
+
+  <script>
+    function realizarLogin() {
+      alert("Autenticação não implementada. Aqui você lidaria com a autenticação no backend.");
+    }
+
+    function realizarRegistro() {
+      alert("Registro não implementado. Aqui você lidaria com o registro no backend.");
+    }
+
+    function mostrarRegistro() {
+      document.getElementById('login-form').style.display = 'none';
+      document.getElementById('register-container').style.display = 'block';
+    }
+  </script>
+</body>
+</html>

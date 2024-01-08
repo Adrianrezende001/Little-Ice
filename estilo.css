@@ -1,0 +1,189 @@
+modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    right: 0; /* Ajuste a posição para o canto superior direito */
+    top: 0; /* Ajuste a posição para o canto superior direito */
+    padding: 15px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 200px; /* Ajuste a largura conforme necessário */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f4f6;
+}
+
+header {
+    position: relative;
+    background-image: url('WhatsApp Image 2024-01-07 at 21.04.32.jpeg');
+    background-size: cover;
+    padding: 40px;
+}
+
+h1 {
+    margin: 0;
+    display: inline-block;
+    position: relative;
+}
+
+.logo {
+    width: 80px;
+    height: 60px; /* Defina a altura desejada para a sua logo */
+    margin-left: 180px;
+    position: absolute;
+    top: 12%; /* Ajuste conforme necessário */
+}
+
+/* O restante do seu CSS permanece inalterado */
+/* Adicione as seguintes regras de animação */
+@keyframes slideIn {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Adicione uma classe ao carrinho para aplicar a animação */
+#carrinho {
+    animation: slideIn 0.5s ease-out; /* Ajuste a duração e o timing conforme necessário */
+}
+
+/* O restante do seu CSS permanece inalterado */
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('your-background-image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #f8f4f6;
+}
+
+header {
+    background-color: #e70c9e;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav {
+    background-color: #e90da7;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #f8fcf8;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.produtos {
+    max-width: 70%;
+}
+
+.carrinho-contato {
+    max-width: 25%;
+}
+
+section {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+h2 {
+    color: #0f070d;
+}
+
+.produto {
+    border: 1px solid #070707;
+    padding: 20px;
+    width: calc(33.33% - 20px);
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+    background-color: #fff;
+}
+
+.produto:hover {
+    transform: scale(1.05);
+}
+
+.produto img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.produto button {
+    background-color: #c26e98;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.produto button:hover {
+    background-color: #36032f;
+}
+
+.info-nutricional {
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #b96e8b;
+    color: #fff;
+}
+

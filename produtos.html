@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Ice</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <header>
+        <img src="WhatsApp Image 2024-01-07 at 21.04.32.jpeg" alt="Logo Little Ice" class="logo"> <!-- Adicione o caminho para a sua logo -->
+        <h1>LITTLE ICE</h1>
+    </header>
+
+    <nav>
+        <a href="https://api.whatsapp.com/send/?phone=86999526577&text&type=phone_number&app_absent=0"
+            target="_blank">Início</a>
+        <a href="produtos.html" target="_blank">Produtos</a>
+        <a href="contato.html" target="_blank">Contato</a>
+        <a href="quemsomos.html" target="_blank">Quem somos?</a>
+           <a href="cardapio.html" target="_blank">Cardapio</a>
+    </nav>
+
+    <div class="conteudo">
+        <h2>Nossos Produtos</h2>
+        <div class="produtos">
+            <section>
+                <div class="produto">
+                    <img src="https://i0.wp.com/geladinhogourmet.com.br/wp-content/uploads/2016/11/52597_w840h525_1475155520geladinho-morango2.jpg?resize=665%2C416&ssl=1"
+                        alt="Morango">
+                    <h3>Morango</h3>
+                    <p>Desfrute da doçura natural e refrescante do morango em nosso geladinho. Cada mordida é uma
+                        explosão de sabor frutado, perfeito para se refrescar nos dias quentes.</p>
+                    <p>Preço: R$ 2,00</p>
+                    <label for="quantidade_morango">Quantidade:</label>
+                    <input type="number" id="quantidade_morango" value="1" min="1">
+                    <button onclick="adicionarAoCarrinho('Morango', 2.0, 'quantidade_morango')">Adicionar ao
+                        Carrinho</button>
+                </div>
+
+                <div class="produto">
+                    <img src="https://geladinhodesucesso.com/wp-content/uploads/2019/11/geladinho-de-goiaba-cremoso-1200x900.jpg"
+                        alt="Goiaba">
+                    <h3>Goiaba</h3>
+                    <p>Experimente a intensidade tropical da goiaba em cada lampejo desse geladinho delicioso. Uma
+                        escolha exótica para aqueles que buscam uma experiência única.</p>
+                    <p>Preço: R$ 2,00</p>
+                    <label for="quantidade_goiaba">Quantidade:</label>
+                    <input type="number" id="quantidade_goiaba" value="1" min="1">
+                    <button onclick="adicionarAoCarrinho('Goiaba', 2.0, 'quantidade_goiaba')">Adicionar ao
+                        Carrinho</button>
+                </div>
+
+                <div class="produto">
+                    <img src="https://i.pinimg.com/736x/92/8f/72/928f72ebed94f4fca90440635125e3af.jpg" alt="Biscoito">
+                    <h3>Biscoito</h3>
+                    <p>A união perfeita entre o crocante do biscoito e a suavidade do geladinho. Um deleite
+                        irresistível que combina texturas para uma experiência de sabor única.</p>
+                    <p>Preço: R$ 2,00</p>
+                    <label for="quantidade_biscoito">Quantidade:</label>
+                    <input type="number" id="quantidade_biscoito" value="1" min="1">
+                    <button onclick="adicionarAoCarrinho('Biscoito', 2.0, 'quantidade_biscoito')">Adicionar ao
+                        Carrinho</button>
+                </div>
+
+                <div class="produto">
+                    <img src="https://www.confeiteiradesucesso.com/wp-content/uploads/2021/12/geladinhochocolate.jpg"
+                        alt="Moouse de Chocolate">
+                    <h3>Moouse de Chocolate</h3>
+                    <p>Sinta a indulgência do chocolate em cada camada cremosa do nosso geladinho de mousse. Uma
+                        sobremesa gelada para os amantes do chocolate.</p>
+                    <p>Preço: R$ 3,00</p>
+                    <label for="quantidade_chocolate">Quantidade:</label>
+                    <input type="number" id="quantidade_chocolate" value="1" min="1">
+                    <button onclick="adicionarAoCarrinho('Moouse de Chocolate', 3.0, 'quantidade_chocolate')">Adicionar
+                        ao Carrinho</button>
+                </div>
+
+                <div class="produto">
+                    <img src="https://i.pinimg.com/736x/65/8f/49/658f49583c32309a3923ced54b3fd958.jpg" alt="Abacate">
+                    <h3>Abacate</h3>
+                    <p>Descubra a cremosidade e a riqueza do abacate neste geladinho único. Uma opção deliciosa para
+                        quem busca sabores inovadores e nutritivos.</p>
+                    <p>Preço: R$ 2,00</p>
+                    <label for="quantidade_abacate">Quantidade:</label>
+                    <input type="number" id="quantidade_abacate" value="1" min="1">
+                    <button onclick="adicionarAoCarrinho('Abacate', 2.0, 'quantidade_abacate')">Adicionar ao
+                        Carrinho</button>
+                </div>
+
+                <div class="produto">
+                    <img src="https://i.ytimg.com/vi/Fx_Dh5oXw98/maxresdefault.jpg" alt="Buriti">
+                    <h3>Buriti</h3>
+                    <p>Explore a exótica fruta buriti em forma de geladinho. Uma mistura de doçura tropical e
+                        frescor que proporciona uma experiência de sabor única.</p>
+                    <p>Preço: R$ 3,00</p>
+                    <label for="quantidade_buriti">Quantidade:</label>
+                    <input type="number" id="quantidade_buriti" value="1" min="1">
+                    <button onclick="adicionarAoCarrinho('Buriti', 3.0, 'quantidade_buriti')">Adicionar ao
+                        Carrinho</button>
+                </div>
+
+                <div class="produto">
+                    <img src="https://i.pinimg.com/originals/35/28/9f/35289fa4b114d45a03a784a41e438422.jpg"
+                        alt="Moouse de maracujá">
+                    <h3>Moouse de maracujá</h3>
+
+                     <p>Deixe-se levar pela explosão cítrica e suavidade do maracujá neste geladinho de mousse. Uma
+                        opção refrescante para os amantes de sabores tropicais.</p>
+                        <p>Preço: R$ 3,00</p>
+                        <label for="quantidade_maracuja">Quantidade:</label>
+                        <input type="number" id="quantidade_maracuja" value="1" min="1">
+                        <button
+                            onclick="adicionarAoCarrinho('Moouse de maracujá', 3.0, 'quantidade_maracuja')">Adicionar
+                            ao Carrinho</button>
+                </div>
+
+                <div class="produto">
+                    <img src="https://comidinhasdochef.com/wp-content/uploads/2019/02/Geladinho-de-Beijinho.jpg"
+                        alt="Beijinho">
+                    <h3>Beijinho</h3>
+                    <p>Reviva a nostalgia do sabor do beijinho em uma versão gelada. Cada pedaço é uma mistura
+                        irresistível de coco e leite condensado.</p>
+                    <p>Preço: R$ 3,00</p>
+                    <label for="quantidade_beijinho">Quantidade:</label>
+                    <input type="number" id="quantidade_beijinho" value="1" min="1">
+                    <button onclick="adicionarAoCarrinho('Beijinho', 3.0, 'quantidade_beijinho')">Adicionar ao
+                        Carrinho</button>
+                </div>
+
+                <div class="produto">
+                    <img src="https://saboreiereceitas.com.br/thumbnails/geladinho-gourmet-de-abacaxi-para-fazer-e-vender-doce-sal-e-etc-receitas-caseiras-Zr6RXP-HE4w.jpg"
+                        alt="Delicia de Abacaxi">
+                    <h3>Delicia de Abacaxi</h3>
+                    <p>Desfrute da doçura natural do abacaxi em cada camada deste geladinho delicioso. Uma opção
+                        tropical e revigorante para qualquer ocasião.</p>
+                    <p>Preço: R$ 2,00</p>
+                    <label for="quantidade_abacaxi">Quantidade:</label>
+                    <input type="number" id="quantidade_abacaxi" value="1" min="1">
+                    <button onclick="adicionarAoCarrinho('Delicia de Abacaxi', 2.0, 'quantidade_abacaxi')">Adicionar
+                        ao Carrinho</button>
+                </div>
+            </section>
+        </div>
+
+
+
+<div class="carrinho-contato">
+            <section>
+                <h2>Carrinho de Compras</h2>
+                <ul id="carrinho">
+                    <!-- Os itens selecionados aparecerão aqui -->
+                </ul>
+                <p>Total: R$ <span id="total">0.00</span></p>
+                <button onclick="redirecionarParaLogin()">Finalizar Compra</button>
+                <p>Número de itens no carrinho: <span id="numItensCarrinho">0</span></p>
+            </section>
+
+            <section>
+                <h2>Formas de Pagamento</h2>
+                <img src="visa.png" alt="Visa">
+                <img src="mastercard.png" alt="Mastercard">
+                <img src="paypal.png" alt="Pay Pal">
+                <img src="pix.png" alt="Pix">
+                <img src="boleto.png" alt="Boleto">
+                <!-- Adicione as imagens das formas de pagamento que desejar -->
+            </section>
+
+            <footer>
+                <p>Entre em contato: Telefone: +55 86 99526577 </p>
+            </footer>
+        </div>
+
+    
+        <script>
+            // Seu script JavaScript existente
+            var numItensCarrinho = 0;
+            var total = 0.0;
+    
+            function redirecionarParaLogin() {
+                // Redireciona o usuário para a página de login
+                window.location.href = "login.html";
+            }
+            function realizarLogin() {
+                var email = document.getElementById("email").value;
+                var password = document.getElementById("password").value;
+        
+                // Aqui você pode adicionar a lógica para enviar os dados ao backend para autenticação
+                // e redirecionar o usuário após o login bem-sucedido.
+        
+                // Exemplo de alerta:
+                alert("Autenticação não implementada. Aqui você lidaria com a autenticação no backend.");
+            }
+        </script>
+        
+
+        <script>
+            var numItensCarrinho = 0;
+            var total = 0.0;
+        
+            function adicionarAoCarrinho(nome, preco, idQuantidade) {
+                // Obtém a quantidade selecionada
+                var quantidadeSelecionada = parseInt(document.getElementById(idQuantidade).value);
+        
+                // Verifica se a quantidade é um número válido
+                if (isNaN(quantidadeSelecionada) || quantidadeSelecionada <= 0) {
+                    console.error("Erro: A quantidade não é válida.");
+                    return;
+                }
+        
+                // Adiciona o item ao carrinho com a quantidade selecionada
+                adicionarItem(nome, preco, quantidadeSelecionada);
+        
+                // Atualiza o total na interface
+                var totalSpan = document.getElementById("total");
+                totalSpan.textContent = total.toFixed(2);
+        
+                numItensCarrinho += quantidadeSelecionada;
+                document.getElementById("numItensCarrinho").textContent = numItensCarrinho;
+            }
+        
+            function adicionarItem(nome, preco, quantidade) {
+                var carrinho = document.getElementById("carrinho");
+        
+                // Verifica se o preço é um número
+                if (isNaN(preco)) {
+                    console.error("Erro: O preço não é um número.");
+                    return;
+                }
+        
+                // Calcula o preço total para o item
+                var precoTotalItem = preco * quantidade;
+        
+                // Verifica se o preço total é um número
+                if (isNaN(precoTotalItem)) {
+                    console.error("Erro: O preço total não é um número.");
+                    return;
+                }
+        
+                // Adiciona o item ao carrinho com a quantidade
+                var li = document.createElement("li");
+                li.textContent = nome + " - Qtd: " + quantidade + " - R$ " + precoTotalItem.toFixed(2);
+                carrinho.appendChild(li);
+        
+                // Atualiza o total global
+                total += precoTotalItem;
+            }
+            
+        </script>
+        
+
+
+</body>
+
+</html>
